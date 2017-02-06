@@ -1,0 +1,12 @@
+body{
+
+  background-attachment: fixed;
+    background-position: center; 
+      background-repeat: no-repeat;
+
+}
+#mainDiv {
+  margin-top:30px;
+  min-width:300px;
+  max-width:900px;
+}
