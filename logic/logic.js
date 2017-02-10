@@ -68,6 +68,6 @@ $(document).ready(function() {
   // }
   //FIRST option to get GEOLOCATION
 
-
+}
 
 });
