@@ -36,7 +36,6 @@ $(document).ready(function() {
       tempFahr = ((tempKelv) * (9 / 5) - 459.67).toFixed(2);
       var windSpeed = (data.wind.speed).toFixed(2);
       console.log(tempFahr);
-
       console.log(tempCels);
 
       $("#cityName").html(cityName);
