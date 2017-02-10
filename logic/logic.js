@@ -65,9 +65,7 @@ $(document).ready(function() {
   });
 
   //FIRST option to get GEOLOCATION
-  // }
+  }
   //FIRST option to get GEOLOCATION
 
-}
-
-});
+  });
