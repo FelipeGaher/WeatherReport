@@ -6,7 +6,6 @@ $(document).ready(function() {
   var tempKelv;
   var tempFlag = true;
 
-  //SECOND option to get GEOLOCATION
   //using IP-API Json to get the position.
   $.getJSON("http://ip-api.com/json", function(dataPosition) {
     lat = dataPosition.lat;
