@@ -6,24 +6,12 @@ $(document).ready(function() {
   var tempKelv;
   var tempFlag = true;
 
-
-  //FIRST option to get GEOLOCATION
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
-
-      lat = position.coords.latitude;
-      lon = position.coords.longitude;
-/*
-    });
-  }
-
   //SECOND option to get GEOLOCATION
   //using IP-API Json to get the position.
   $.getJSON("http://ip-api.com/json", function(dataPosition) {
     lat = dataPosition.lat;
     lon = dataPosition.lon;
-*/
+
     var code = "4fba7be048b56f36a5bf4b2568bebd7e";
     var api = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + code;
     //Get openWeather JSON
@@ -63,9 +51,4 @@ $(document).ready(function() {
       }
     });
   });
-
-  //FIRST option to get GEOLOCATION
-  }
-  //FIRST option to get GEOLOCATION
-
   });
